@@ -43,6 +43,7 @@ const [open, SetOpen] = useState(false);
          <Typography sx={{ cursor: "pointer", fontSize: "14px"}}>{item.Name}</Typography>
          ))}
             </MenuBox>
+
         <SearchBox>
             <InputBase placeholder="Search..." sx= {{color: "white"}}/>
             <MenuIcon 
@@ -52,7 +53,9 @@ const [open, SetOpen] = useState(false);
             }} 
             onClick={ () => SetOpen(!open)}
             />  
+
          </SearchBox>
+
       </StyleToolbar>
       <Menu
         id="demo-positioned-menu"
@@ -67,6 +70,7 @@ const [open, SetOpen] = useState(false);
           vertical: 'top',
           horizontal: 'left',
         }}
+        
       >
         <Box sx= {{width: 350, height: "90vh"}}>
             {MenuItems.map((item) => (
