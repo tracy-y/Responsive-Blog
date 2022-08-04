@@ -29,7 +29,7 @@ const MenuItems = [{ Name: 'Home', Link: '/' },
 ];
 const [open, SetOpen] = useState(false);
   return (
-    <AppBar sx = {{background: "black"}}>
+    <AppBar sx = {{background: "black"}} position={"static"} >
       <StyleToolbar>
         <SocialBox>
           <Box>
