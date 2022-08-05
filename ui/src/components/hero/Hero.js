@@ -2,6 +2,7 @@ import react from 'react';
 import {Box, Typography} from '@mui/material';
 import AndreyImage from "../../static/AndreyImage.jpg";
 
+
 const Hero = () => {
   return (
    <Box> 
@@ -18,8 +19,25 @@ const Hero = () => {
       backgroundSize: "Cover",
       height: 800,
       width: "100%",
+      display:"flex",
+      // justifyContent:"center",
       // clip: "rect(200px, 100%, 800px, 0)",
-     }}></Box>
+     }}>
+      <Box sx={{ width:{xs:"100%", sm:"50%", md:"40%"}, paddingTop: {sx:5, sm:4, md:25}, paddingLeft: {sx:18, sm: 22, md:100}}}>
+      {/* <Box sx={{ width:{xs:"100%", sm:"50%", md:"40%"}, padding: {sx: 3, sm: 2, md: 20}, }}> */}
+       <Box sx = {{background: "white", opacity: "0.8"}}>
+        <Typography variant={"h6"} color="tomato" align="center" pt={6}>
+          Trending Styles
+        </Typography>
+        <Typography variant="h4" align="center" >
+          Life is Boring without Fashion!
+        </Typography>
+        <Typography variant="h6" align="center" pb={6} >
+          We love to change your style home ipsum
+        </Typography>
+       </Box>
+       </Box>
+      </Box>
      </Box>
   )
 }
