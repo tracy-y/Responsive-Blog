@@ -9,6 +9,9 @@ const StyledBox = styled(Box)({
  height: 200,
  width: "100%",
  cursor: "pointer",
+ backgroundRepeat: "no-repeat",
+ backgroundPosition: "center",
+ backgroundSize: "cover",
 })
 
 const StyledTypography = styled(Typography)({
@@ -20,7 +23,7 @@ const StyledTypography = styled(Typography)({
 const Categories = () => {
   return (
     <Box>
-        <Stack direction="row" spacing={4}>
+        <Stack direction={{xs:"column", sm:"row"}} spacing={{ xs: 1, sm: 2, md: 4 }} mt={5}>
           <StyledBox sx={{backgroundImage: `url(${kidsImage})`}}>
             <StyledTypography align="center" variant="h3">
                 kids
