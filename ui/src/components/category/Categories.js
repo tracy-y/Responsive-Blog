@@ -23,7 +23,7 @@ const StyledTypography = styled(Typography)({
 const Categories = () => {
   return (
     <Box>
-        <Stack direction={{xs:"column", sm:"row"}} spacing={{ xs: 1, sm: 2, md: 4 }} mt={5}>
+        <Stack direction={{xs:"column", sm:"row"}} spacing={{ xs: 1, sm: 2, md: 4 }} mt={6}>
           <StyledBox sx={{backgroundImage: `url(${kidsImage})`}}>
             <StyledTypography align="center" variant="h3">
                 kids

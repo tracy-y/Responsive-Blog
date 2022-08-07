@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { AppBar, Box, InputBase, Menu, MenuItem, styled, Toolbar, Typography } from "@mui/material";
-import {Facebook, Instagram, Menu as MenuIcon, Twitter} from '@mui/icons-material/';
+import {Facebook, Instagram, Twitter, Menu as MenuIcon} from '@mui/icons-material/';
+
 
 function Navbar() {
   const StyleToolbar = styled(Toolbar)({
@@ -12,6 +13,7 @@ function Navbar() {
     display: "flex",
     gap: 10,
   });
+
   const MenuBox = styled(Box)({
     display: "flex",
     gap: 30,
@@ -31,13 +33,11 @@ const [open, SetOpen] = useState(false);
   return (
     <AppBar sx = {{background: "black"}} position={"static"} >
       <StyleToolbar>
-        <SocialBox>
-          <Box>
-            <Facebook/>
-            <Instagram/>
-            <Twitter/>
-           </Box>
-         </SocialBox>
+       <SocialBox>
+          <Facebook/>
+          <Instagram/>
+          <Twitter/>
+        </SocialBox>
         <MenuBox sx= {{display: {xs:'none', sm: 'none', md:'flex'}}}>
          {MenuItems.map((item) => (
          <Typography sx={{ cursor: "pointer", fontSize: "14px"}}>{item.Name}</Typography>
