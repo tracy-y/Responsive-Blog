@@ -4,7 +4,7 @@ import { Box, CardMedia, CardContent, Typography, Link } from '@mui/material';
 const Card = ({ cardImage }) => {
   return (
     <Box>
-        <Link href="http://localhost:3000/details" sx={{ textDecoration: "none"}}>
+        <Link href="http://fashionblog.s3-website-ap-southeast-2.amazonaws.com/" sx={{ textDecoration: "none"}}>
         <CardMedia
             component="img"
             height="100%"
